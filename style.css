@@ -25,7 +25,7 @@ iframe {
 .television__antenna {
   width: 5px;
   height: 100px;
-  background-color: #3b3733;
+  background-color: black;
   margin-bottom: -10px;
 }
 
@@ -41,7 +41,7 @@ iframe {
 
 .television__antenna__base {
   height: 20px;
-  background-color: #3b3733;
+  background-color: black;
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
   margin-bottom: 10px;
@@ -66,6 +66,7 @@ iframe {
 .television__screen {
        width: 370px;
     height: 290px;
+    background-image: url("tv-static-gif-23.gif");
    background-color: black;
    border-radius: 48px;
    float: left;
@@ -150,8 +151,12 @@ iframe {
 
 html {
   margin: 15px auto;
-  width: 940px;
-  background-color: #FDA37E;
+
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   color: white;
 }
 
@@ -197,10 +202,7 @@ h2 {
   text-shadow: 2px 2px 0px rgba(0,0,0,.3)
 }
 
-.red {
-  background-color: salmon;
-  border-color: rgb(150,120,120);
-}
+
 
 
 .green {
@@ -208,10 +210,11 @@ h2 {
   border-color: #53A574;
 }
 
-.blue {
+.red {
   background-color: #d64832;
   border-color: #a21904;
-  top: -3px;
+  top: -2px;
+  font-size: 15px;
   position: relative;
 }
 
@@ -326,6 +329,7 @@ h1 {
 }
 
 .search-box {
+      padding-left: 70px;
   overflow: hidden;
     width: 50%;
     margin: 0 auto;

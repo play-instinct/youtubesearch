@@ -4,7 +4,7 @@
  <link rel = "stylesheet"
    type = "text/css"
    href = "style.css" />
-	<title></title>
+	<title>Search Youtube</title>
 </head>
 <body>
 <div class="search-box">
@@ -12,7 +12,9 @@
 <h1>Search the Tube</h1>
 </div>
 <div class="input">
-<input type="text" placeholder=""></input><a class="button blue" href="#">search</a>
+	<form id="search-form">
+		<input type="text" placeholder="" class="js-query"></input><button class="button red" type="submit" href="#">search</a>
+	</form>
 </div></div>
 <div class="television">
   <div class="television__top">
@@ -39,6 +41,10 @@
 <div class="view-modal">View Results in List</div>
 <div class="previous-result"><a href="#">< Previous Result</a></div>
 <div class="next-result"><a href="#">Next Result ></a></div>
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 </html>
