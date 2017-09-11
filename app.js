@@ -1,9 +1,14 @@
-const YOUTUBE_SEARCH_URL = '';
+// DO NOT EVER STORE YOUR API KEYS LIKE THIS, PLZ DON'T USE MY KEY
+const YOUTUBE_SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
+const YOUTUBE_KEY = 'AIzaSyBYJymdEVZfFljKBGip48WreCgIx7GWJqw'
 
 function getDataFromApi(searchTerm, callback) {
   const settings = {
     url: YOUTUBE_SEARCH_URL,
     data: {
+      key: YOUTUBE_KEY,
+      part: 'snippet',
+      q: searchTerm,
     },
     dataType: 'json',
     type: 'GET',
@@ -21,8 +26,7 @@ function renderResult(result) {
 }
 
 function displayYoutubeSearchData(data) {
-  const results = data.items.map((item, index) => renderResult(item));
-  $('.js-search-results').html(results);
+  console.log(data);
 }
 
 function watchSubmit() {
