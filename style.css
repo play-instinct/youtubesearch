@@ -7,8 +7,6 @@ iframe {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border: 10px solid;
-  border-radius: 32px;
 }
 
 .television {
@@ -50,6 +48,10 @@ iframe {
   z-index: 2;
 }
 
+.hidden {
+  opacity: 0;
+}
+
 .television__center {
    position: relative;
    z-index: 2;
@@ -60,11 +62,11 @@ iframe {
    box-shadow: -10px -10px #d64832;
    border-radius: 48px;
    margin: 0 auto;
-   padding: 10px 15px;
+   padding: 4px 2px;
 }
 
 .television__screen {
-       width: 370px;
+       width: 448px;
     height: 290px;
     background-image: url("tv-static-gif-23.gif");
    background-color: black;
@@ -357,10 +359,21 @@ h1 {
 }
 
 
+.hidden {
+
+}
+
 a {
   text-decoration: none;
   color: white;
   opacity: 0.6;
+}
+
+
+.inside-div {
+ position: absolute;
+ top: 44%;
+ left: 42%;
 }
 
 a:hover {
